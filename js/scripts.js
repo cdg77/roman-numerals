@@ -10,9 +10,9 @@ var romanNumeralize = function(number) {
     1000 : 'M'
     };
 
-    console.log(romanNumerals);
-    console.log(number);
-    console.log(romanNumerals[number]);
+    if ( number >= 3999 ) {
+      return ('Sorry, I can\'t count that high');
+    } else
 
     return romanNumerals[number];
 

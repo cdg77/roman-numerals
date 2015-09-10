@@ -12,4 +12,8 @@ describe('romanNumeralize', function() {
     expect(romanNumeralize(500)).to.equal('D');
   });
 
+  it('check whether the number is less than or equal to 3999', function() {
+    expect(romanNumeralize(4000)).to.equal('Sorry, I can\'t count that high');
+  });
+
 });
