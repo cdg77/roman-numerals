@@ -12,8 +12,9 @@ var romanNumeralize = function(number) {
 
     if ( number >= 3999 ) {
       return ('Sorry, I can\'t count that high');
+
+    } else if ( romanNumerals[number] !== undefined ){
+      return romanNumerals[number];
+
     } else
-
-    return romanNumerals[number];
-
 }
