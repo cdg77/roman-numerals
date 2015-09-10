@@ -16,4 +16,8 @@ describe('romanNumeralize', function() {
     expect(romanNumeralize(4000)).to.equal('Sorry, I can\'t count that high');
   });
 
+  it('returns the roman numeral for a number that does not have a repeating letter', function() {
+    expect(romanNumeralize(67)).to.equal('LXVI');
+  });
+
 });

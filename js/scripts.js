@@ -16,5 +16,15 @@ var romanNumeralize = function(number) {
     } else if ( romanNumerals[number] !== undefined ){
       return romanNumerals[number];
 
-    } else
+    }
+    // else do {
+    //
+    //   if ( number > 1000 ) {
+    //     number =  number % 1000
+    //     return romanNumerals[number];
+    //     debugger
+    //   }
+    //
+    // } while ( number !== 0 );
+
 }
